@@ -24,29 +24,25 @@ Reduce churn by identifying high-risk customers early.
 
 ## 📂 Project Structure
 
+Project layout (matching the attached diagram):
+
 ibm-churn-ml/
-│
 ├── data/
 │   ├── raw/
-│   ├── processed/
-│
+│   └── processed/
 ├── notebooks/
-│   ├── 01_eda.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   ├── 03_model_training.ipynb
-│
+│   ├── eda.ipynb
+│   ├── feature_engineering.ipynb
+│   └── model_training.ipynb
 ├── src/
 │   ├── data_processing.py
 │   ├── feature_engineering.py
 │   ├── train.py
 │   ├── evaluate.py
 │   └── utils.py
-│
 ├── models/
-│
 ├── reports/
 │   └── figures/
-│
 ├── requirements.txt
 ├── .gitignore
 └── README.md
