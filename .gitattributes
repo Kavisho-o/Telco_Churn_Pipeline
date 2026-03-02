@@ -1,0 +1,11 @@
+# Enforce LF in repository for notebooks and common text files
+*.ipynb text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+
+# Keep large/binary files as binary
+datasets/raw/* binary
+models/* binary
