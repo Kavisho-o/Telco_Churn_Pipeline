@@ -26,11 +26,21 @@ def feature_engineering(df: pd.DataFrame) -> pd.DataFrame:
         "Churn Reason",
         "CLTV",
         "Total Charges",
-        "Contract",
     ]
 
 
     df = df.drop(columns=drop_cols)
+
+    # Normalize tenure column name (some datasets use 'Tenure Months')
+    if "tenure" not in df.columns:
+        if "Tenure Months" in df.columns:
+            df["tenure"] = df["Tenure Months"]
+        elif "tenure_months" in df.columns:
+            df["tenure"] = df["tenure_months"]
+
+    # Ensure tenure is numeric
+    if "tenure" in df.columns:
+        df["tenure"] = pd.to_numeric(df["tenure"], errors="coerce").fillna(0).astype(int)
 
 
     # Fixing internet dependent services
