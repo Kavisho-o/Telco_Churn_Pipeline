@@ -22,10 +22,9 @@ Reduce churn by identifying high-risk customers early.
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-Project layout (matching the attached diagram):
-
+```
 ibm-churn-ml/
 ├── data/
 │   ├── raw/
@@ -46,6 +45,7 @@ ibm-churn-ml/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
 ---
 
