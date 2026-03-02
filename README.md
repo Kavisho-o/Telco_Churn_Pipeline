@@ -1,6 +1,6 @@
 # 📊 Telco Customer Churn Prediction — End-to-End ML Pipeline
 
-TL;DR: An end-to-end reproducible pipeline that predicts customer churn using the IBM Telco dataset. The final Gradient Boosting model achieves the following on the test set:
+An end-to-end reproducible pipeline that predicts customer churn using the IBM Telco dataset. The final Gradient Boosting model achieves the following on the test set:
 
 - ROC-AUC: 0.85498
 - Precision: 0.6069
@@ -45,7 +45,7 @@ The trained model artifact is saved as `models/gradient_boosting_telco.joblib` a
 └── README.md
 ```
 
-## What I did (high-level)
+## What I did 
 
 - Data cleaning and preprocessing (see `src/data_loader.py`).
 - Feature engineering including categorical encodings and derived buckets (see `src/features.py`).
