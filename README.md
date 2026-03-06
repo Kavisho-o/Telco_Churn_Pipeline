@@ -9,7 +9,7 @@ An end-to-end reproducible pipeline that predicts customer churn using the IBM T
 
 The trained model artifact is saved as `models/gradient_boosting_telco.joblib` and the evaluation metrics are in `reports/evaluation_report.json`.
 
-## Why this project (what recruiters care about)
+## Why this project
 
 - Clear problem framing and business objective (reduce customer churn).
 - End-to-end reproducible pipeline: data ingestion, feature engineering, model training, evaluation.
